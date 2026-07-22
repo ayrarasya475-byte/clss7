@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VanGuard 7B</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <button class="menu-btn" id="menu-open" aria-label="Buka menu">
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M0 1H18M0 7H18M0 13H18" stroke="currentColor" stroke-width="2"/></svg>
+    </button>
+    <div class="brandmark">
+      <div class="stamp"><span>KLS<br>7B</span></div>
+      <div class="brand-text" id="brand-name">VanGuard 7B<small id="brand-sub">SMP Negeri 1 Talang</small></div>
+    </div>
+    <div style="width:40px"></div>
+  </div>
+</header>
+
+<div class="drawer-overlay" id="drawer-overlay"></div>
+<nav class="drawer" id="drawer">
+  <div class="drawer-head">
+    <div class="brand-text">Menu</div>
+    <button class="drawer-close" id="menu-close" aria-label="Tutup menu">×</button>
+  </div>
+  <nav>
+    <a href="#dashboard" data-route="dashboard"><span class="tab-color"></span>Dashboard</a>
+    <a href="#struktur" data-route="struktur"><span class="tab-color"></span>Struktur & Jadwal</a>
+    <a href="#tentang" data-route="tentang"><span class="tab-color"></span>Tentang Kami</a>
+    <a href="#kontak" data-route="kontak"><span class="tab-color"></span>Kontak</a>
+    <a href="#peraturan" data-route="peraturan"><span class="tab-color"></span>Peraturan Kelas</a>
+    <a href="#faq" data-route="faq"><span class="tab-color"></span>FAQ & Privasi</a>
+    <a href="#prestasi" data-route="prestasi"><span class="tab-color"></span>Prestasi</a>
+  </nav>
+</nav>
+
+<main>
+  <div class="view active" id="view-dashboard"></div>
+  <div class="view" id="view-struktur"></div>
+  <div class="view" id="view-tentang"></div>
+  <div class="view" id="view-kontak"></div>
+  <div class="view" id="view-peraturan"></div>
+  <div class="view" id="view-faq"></div>
+  <div class="view" id="view-prestasi"></div>
+</main>
+
+<footer>VANGUARD 7B — SMP NEGERI 1 TALANG</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
